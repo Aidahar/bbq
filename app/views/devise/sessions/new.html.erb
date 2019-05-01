@@ -3,6 +3,9 @@
     <h2>Войти</h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+        <%= render "devise/shared/error_messages", resource: resource, class: "alert alert-danger", role: "alert" %>
+
       <div class="form-group">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
@@ -21,7 +24,7 @@
       <% end %>
 
       <div class="actions">
-        <%= f.submit "Войти", class: "btn btn-primary" %>
+        <%= f.submit "Войти", class: "btn btn-primary" %> или <%= render "devise/shared/links" %>
       </div>
     <% end %>
   </div>
