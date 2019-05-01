@@ -1,0 +1,48 @@
+ru:
+  activerecord:
+    models:
+      user: 'Пользователь'
+      event: 'Событие'
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Имя'
+        password: 'Пароль'
+        new_password: 'Новый пароль'
+        current_password: 'Старый пароль'
+        password_confirmation: 'Подтверждение пароля'
+      event:
+        title: 'Название мероприятия'
+        address: 'Место проведения'
+        datetime: 'Дата и время'
+        description: 'Описание мероприятия'
+      subscription:
+        user_email: 'Этот Email'
+    errors:
+      models:
+        subscription:
+          attributes:
+            user_email:
+              not_available: 'Email занят!'
+
+  controllers:
+    events:
+      created: 'Вы создали новое мероприятие'
+      updated: 'Вы обновили мероприятие'
+      destroyed: 'Вы удалили мероприятие!'
+    users:
+      updated: 'Вы обновили свой профиль'
+
+  events:
+    destroy_confirm: 'Вы уверены, что хотите удалить это событие?'
+
+  actions:
+    delete_profile: 'Удалить профиль'
+    are_you_sure: 'Вы уверены?'
+    sign_up: 'Зарегистрироваться'
+    sign_in: 'Войти'
+    save: 'Сохранить'
+    update: 'Обновить'
+    delete: 'Удалить'
+    back: 'Назад'
+    сhange: 'Изменить'
