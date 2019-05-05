@@ -24,7 +24,6 @@ ru:
           attributes:
             user_email:
               not_available: 'Email занят!'
-
   controllers:
     events:
       created: 'Новое мероприятие создано'
@@ -32,10 +31,16 @@ ru:
       destroyed: 'Мероприятие удалено!'
     users:
       updated: 'Профиль обновлен'
-
+    comments:
+      created: 'Комментарий создан'
+      destroyed: 'Комментарий удален'
+      error: 'Возникла ошибка с комментарием'
+    subscriptions:
+      created: 'Вы подписались на данное событие'
+      destroyed: 'Вы отписались от события'
+      error: 'Подписка/отписка не сработала'
   events:
     destroy_confirm: 'Вы уверены, что хотите удалить это событие?'
-
   actions:
     delete_profile: 'Удалить профиль'
     are_you_sure: 'Вы уверены?'
@@ -46,7 +51,12 @@ ru:
     delete: 'Удалить'
     back: 'Назад'
     сhange: 'Изменить'
-
   app:
     name: "Шашлыки"
     company: "Хороший программист"
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены что хотите удалить этот комментарий?'
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены что хотите удалить эту подписку?'

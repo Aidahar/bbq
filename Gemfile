@@ -10,6 +10,7 @@ gem 'rails-i18n'
 gem 'uglifier', '>= 1.3.0'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
+gem "font-awesome-rails"
 
 group :production do
  gem 'pg'

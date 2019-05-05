@@ -10,6 +10,8 @@ class EventsController < ApplicationController
 
   # GET /events/1
   def show
+    @new_comment = @event.comments.build(params[:comment])
+    @new_subscription = @event.subscriptions.build(params[:subscription])
   end
 
   # GET /events/new
@@ -46,16 +48,16 @@ class EventsController < ApplicationController
     redirect_to events_url, notice: I18n.t('controllers.events.destroyed')
   end
 
-  private
-    def set_event
-      @event = Event.find(params[:id])
-    end
+ private
+  def set_event
+    @event = Event.find(params[:id])
+  end
 
-    def set_current_user_only
-      @event = current_user.events.find(params[:id])
-    end
+  def set_current_user_only
+    @event = current_user.events.find(params[:id])
+  end
 
-    def event_params
-      params.require(:event).permit(:title, :address, :datetime, :description)
-    end
+  def event_params
+    params.require(:event).permit(:title, :address, :datetime, :description)
+  end
 end
