@@ -3,9 +3,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :events
-  has_many :comments
-  has_many :subscriptions
+  has_many :events, dependence: :destroy
+  has_many :comments, dependence: :destroy
+  has_many :subscriptions, dependence: :destroy
 
   before_validation :set_name, on: :create
 
