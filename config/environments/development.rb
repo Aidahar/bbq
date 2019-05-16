@@ -60,11 +60,11 @@ Rails.application.configure do
   config.action_mailer.perform_caching = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address              => "smtp.yandex.ru", 
+    :address              => "smtp.yandex.ru",
         :port                 => 587,
-        :user_name            => "",
-        :password             => "",
+        :user_name            => "andreytestopolis",
+        :password             => "Cfknfyfn1981",
         :authentication       => "plain",
         :enable_starttls_auto => true
-  } 
+  }
 end
