@@ -6,7 +6,7 @@ function init(){
 
   myMap = new ymaps.Map("map", {
       center: [55.76, 37.64],
-      zoom: 10
+      zoom: 10 
   });
 
   myGeocoder = ymaps.geocode(address);
@@ -24,7 +24,7 @@ function init(){
       );
 
       myMap.setCenter(coordinates);
-      myMap.setZoom(15);
+      myMap.setZoom(14);
     }, function (err) {
       alert('Ошибка при определении местоположения');
     }

@@ -23,7 +23,8 @@ ru:
         user_name: 'Ваше имя'
         body: 'Комментарий'
       subscription:
-        user_email: 'Этот Email'
+        user_name: 'Имя'
+        user_email: 'Email'
       photo:
         photo: 'Фотография'
     errors:

@@ -41,12 +41,12 @@
     </div>
     <div class="col-md-4">
       <div class="event-owner">
-        <h4>Зовет:</h4>
+        <h4>Приглашает:</h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
       <% unless subscriptions_empty?(@event) %>
         <div class="event-subscriptions">
-          <h4>Пойдут:</h4>
+          <h4>Участвуют:</h4>
           <div>
             <p>
               <%= render(
