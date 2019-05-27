@@ -17,8 +17,15 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание мероприятия'
+        pincode: 'Пин-код доступа'
+        pincode: 'Пин-код доступа'
+      comment:
+        user_name: 'Ваше имя'
+        body: 'Комментарий'
       subscription:
         user_email: 'Этот Email'
+      photo:
+        photo: 'Фотография'
     errors:
       models:
         subscription:
@@ -30,6 +37,7 @@ ru:
       created: 'Новое мероприятие создано'
       updated: 'Вы успешно изменили мероприятие'
       destroyed: 'Мероприятие удалено!'
+      wrong_pincode: 'Неверный пин-код'
     users:
       updated: 'Профиль обновлен'
     comments:
