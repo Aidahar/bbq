@@ -5,7 +5,7 @@
                                   style: "background-image: url(#{asset_path('event.jpg')})"
       %>
       <div class="event-info-inner row">
-        <div class="col-md-6">
+        <div class="col-md-7">
           <h1><%= @event.title %></h1>
           <h3><%= l @event.datetime, format: :short %></h3>
           <h3>
@@ -18,6 +18,12 @@
               <%= link_to "Удалить событие", event_path(@event), data: { confirm: "Вы уверены?" }, method: :delete, class: 'btn btn-danger' %>
             </div>
           <% end %>
+        </div>
+        <div class="col-md-5">
+          <h3>Как проехать:</h3>
+          <div class="map">
+            <div id="map" data-address="<%= @event.address %>" style="width: 300px; height: 200px; margin: 30px 0;" ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,7 +74,7 @@
     </div>
     <div class="col-md-4">
       <div class="event-map">
-        <div id="map" data-address="<%= @event.address %>" style="width: 260px; height: 250px"></div>
+        <div id="map" data-address="<%= @event.address %>" style="width: 350px; height: 250px"></div>
       </div>
     </div>
   </div>
