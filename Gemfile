@@ -14,6 +14,8 @@ gem 'font-awesome-rails'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
+gem 'sass-rails'
+gem 'lightbox-bootstrap-rails', '5.1.0.1'
 
 group :production do
  gem 'pg'

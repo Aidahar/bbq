@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require activestorage
 //= require_tree .
+//= require twitter/bootstrap
+//= require lightbox-bootstrap
+
